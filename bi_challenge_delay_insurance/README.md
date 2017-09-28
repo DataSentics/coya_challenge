@@ -1,33 +1,26 @@
-# Coya Business Intelligence challenge
+# Coya Business Intelligence challenge - Flight delay insurance product recommendation.
 
-
-## Flight delay insurance product recommendation.
-
-
+# Specification
 There is an idea in the backlog regarding a new insurance product for flight delays. Using the following dataset and the latest year available:
 
 http://stat-computing.org/dataexpo/2009/the-data.html
 
+# Our approach
+To be efficient and come to a reasonable result in short time (one day) we used the tools where we are the most comfortable. The steps:
+## ETL
+We implemented the data preparation pipeline orchestration within the Keboola platform (cloud based ETL):
+Python + SQL (running inside Keboola platform) for downloading data and data preparation
+Snowflake (cloud analytical database) for storing prepared data
+Tableau for visualisation of results
+R for pricing predictive model
 
-### Questions
-1) What can you conclude in terms of delay reasons and the time delays?
-2) What can you recommend for exceptions in the coverage design?
+Proces
 
+# Questions
+
+## Question - 1) What can you conclude in terms of delay reasons and the time delays?
 Please provide the visual analysis using a public view on Tablaeu, Qlik or similar.
 If you use some code to prepare the data, please submit it also within the git bundle.
 
+## Question 2) What can you recommend for exceptions in the coverage design?
 
-## Insurance P&L
-One of the colleagues asked you how to read a profit-and-loss statement of an insurance company
-
-Using the following dataset
-https://www.aviva.com/media/upload/ifrs.xlsx
-
-### Questions
-1) How would you explain the net earned premium figure calculation?
-2) What can you say about the results?
-
-
-Please include everything as commits in a git repository starting from this one. Don't worry too much about making it all nice or perfect, we'll discuss it later with you. Please send us back this repository as a git bundle (`git bundle create $user-coya-bi-challenge master`) or a link to a git repository.
-
-Good luck!
