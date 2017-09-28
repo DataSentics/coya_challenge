@@ -31,17 +31,31 @@ Net earned premium = Earned premium for given time period - part of earned premi
 
 # Question 2) What can you say about the results?
 One could spend a lifetime looking for interesting things within the IFRS statements, some things which are interesting on first glance (especially from the P&L):
+
 • Aviva has not ceded much of it's business to reinsurers (only cca 7% of premium which is not that much). Aviva is one of the largest global players so the need for reinsurance is lower (Aviva can diversify very well on it's own due to it's scale and global reach). Also it's mainly life&pensions business where reinsurance plays a much smaller role then in non-life.
+
 • The change in the premium reserve is relatively small compared to the written premium - this is consistent with the fact that Aviva is a matured player and new business is only a fraction compared to the existing portfolio. This would look very different for an insurnace start-up.
+
 • Very high investment income - again connected to the fact that the portfolio is mainly composed of traditional life&pension products with strong investment components and exists for a long time. The reservers are very high and the incomes from the assets covering these reserves are the main potential source of profit for Aviva (they need to earn more on investments than the return which they guarantee to the policyholders).
+
 • Becuase this is the life business it is very difficult to draw conclusions regarding the whether Aviva was actually doing well or not in the given year. The accounting profit is mostly influenced by which bonds are accounted as HTM and which AFS, how the lapse and mortality assumptions in the mathematical reserves calculations changed, etc.
+
 • On the sheet A20 – Analysis of general insurance, one can see that GI is really less significant that the life/pensions business. Only 3,5b out of the 14b correspond to GI. The profitability of GI is very low with a combined ratio of 97% in the UK (i.e. only 3% of premium are profit). GI rather seems to play as a cross-sell instrument for the life/pensions business.
+
 • The sheet B1 - Geog analysis is interesting as it presents the present value of new business premiums (=expected all future premium coming from new business in the given period discounted to today's prices). The life PVNBP for this period is 15b compared to 17b in the same period the year before which indicates that the growth of Aviva is declining (is was the crysis year after all).
+
 • What's also interesting from B5 - Life pension sales is the fact that most of the PVNBP is coming from single premium contracts (paid up-front) - 8b, only 4,5b is coming from regular paid premium. This again indicates that the insurance is actually more of an investment vehicle than actual risk insurance
+
 • Sheet B7 - New business finally gives us some insights into profitability. This is telling us that the value of new business (all expected future profits from the new business in the given period discounted to today's date) is only 141m compared to the 11,6b value of new business premiums. The ratio is in essence something like a life business equivalent of the combined ratio from non-life. The value of profits is only 1,2% of the value of premiums - i.e. extremely low. This tells us several things:
-  • it's mainly investment business, there is a lot of money going through the company but it's not actually the company's, it's more like a bank fee business
-  • they are not doing that well (crysis years) - probably the investments return were low at that time and hardly sufficient to cover the guaranteed returns to policyholders
-  • the ration decreased from 1,7% the year before to 1,2% - it was bad the year before but it's gotten even worse
-  • there is a very big difference between traditional counties (UK, France, etc.) and Higher growth markets (Poland, Asia, Other) - the newer markets are much more profitable and much less affected by the crysis (probably also less investment products and more risk products)
+
+• it's mainly investment business, there is a lot of money going through the company but it's not actually the company's, it's more like a bank fee business
+
+• they are not doing that well (crysis years) - probably the investments return were low at that time and hardly sufficient to cover the guaranteed returns to policyholders
+
+• the ration decreased from 1,7% the year before to 1,2% - it was bad the year before but it's gotten even worse
+
+• there is a very big difference between traditional counties (UK, France, etc.) and Higher growth markets (Poland, Asia, Other) - the newer markets are much more profitable and much less affected by the crysis (probably also less investment products and more risk products)
+
 • From C1 – Capital management we can see that the MCEV actually increased by 0,3b - this is the best indication that the company is still actually generating some value (making money) even if the accounting result is saying other wise
+
 • From C5 – IFRS Sensitivity analysis it can be seen that the equity (value) of the company is most sensitive to interest rates (natural because of high amount of investment products) and annuitant mortality (if people with annuities live longer - makes sense because of high amount of pension business)
