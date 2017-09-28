@@ -9,7 +9,7 @@ https://www.aviva.com/media/upload/ifrs.xlsx
 ## Probably on an example: 
 Let's take a motor insurance policy (one year coverage) which starts on 1.11.2017 and has a total premium of 480 EUR. There are different options on how to pay premium in terms of frequency = one payment at the start for the whole policy or for example quarterly or monthly but typically many clients go with one annual payment at the start of the policy. Let's assume we have a annual premium paid at the start. Also let's assume that the insurance company has a financial reporting year equivalent to the calendar year (i.e. the 2017 financial year means 1.1.2017-31.12.2017 for them).
 
-## Earned premium concept - (see accompanying picture - XXX) 
+## Earned premium concept - (see accompanying picture - coya_challenge/bi_challenge_ifrs/earned_premium.jpg) 
 We are now in 31.12.2017, the insurer is closing his financial year and he needs to decide what profit&loss he should report for 2017. On our policy the client already paid (or at least the premium has been written / i.e. invoiced - late payments, etc. are another issue) the whole amount of 480 EUR and let's assume that during the first 2 months of the policy there were 0 EUR claims. 480 EUR is the written premium in 2017.
 
 If the insurer only followed a cash flow approach (profit = written premium - claims) he would report a very nice profit of 480 EUR on this policy in the year 2017. This however does not make much sense because the policy had only two months for a claim to happen in 2017 and there will still be 10 months (i.e. majority of the coverage period) left during 2018 when a claim could happen and the insurer would have pay. 
