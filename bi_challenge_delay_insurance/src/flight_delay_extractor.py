@@ -1,5 +1,6 @@
 """
-Following script extracts "flight delay" data from `http://stat-computing.org/dataexpo/2009/`
+Following script extracts "flight delay" data from `http://stat-computing.org/dataexpo/2009/`. Even though we really only needs the 
+latest dataset, for comparison purposes we download 2 latest datasets, i.e. from `2007` and `2008`. 
 """
 
 import pandas as pd
