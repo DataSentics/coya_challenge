@@ -20,7 +20,7 @@ To consider the 480 EUR as profit already in 2017 would be extremely optimistic 
 
 On a portfolio level (which is the case of the discussed Aviva IFRS financial statements) the earned premium for a given period can be calculated as the writted premium minus the change in the premium reserve (premium reserve at the end of the period minus premium reserve at the start of the period). In the Aviva statement (Consolidated income sheet) this is the row 10 plus (written premium) and row 11 (change in premium reserve) with the result being the earned premium in row 12.
 
-## Reinsurnace concept - Gross vs. net premium
+## Reinsurance concept - Gross vs. net premium
 Insurers typically want to limit their risk exposure so they cede part of their risk to reinsurers (i.e. insurance for insurers). So for agreed parts of the insurer's portfolio the claims (or their parts) are paid by the reinsurer. As payment for this the insurer cedes part of the premium it is recieving also to the reinsurer. This part is called ceded premium. The simplest type of reinsurance is quota share where for example the reinsurer pays 10% of each claim and for this he gets 10% of the premium. Reinsurance arrangments can however be much more complex.
 
 Gross premium is the premium which the insurer recieves from it's clients before taking into account any reinsurance arrangements. Net premium is the premium that is left to the insurer after he cedes the agreed part of the premium to the reinsurer.
@@ -34,7 +34,7 @@ One could spend a lifetime looking for interesting things within the IFRS statem
 
 • Aviva has not ceded much of it's business to reinsurers (only cca 7% of premium which is not that much). Aviva is one of the largest global players so the need for reinsurance is lower (Aviva can diversify very well on it's own due to it's scale and global reach). Also it's mainly life&pensions business where reinsurance plays a much smaller role then in non-life.
 
-• The change in the premium reserve is relatively small compared to the written premium - this is consistent with the fact that Aviva is a matured player and new business is only a fraction compared to the existing portfolio. This would look very different for an insurnace start-up.
+• The change in the premium reserve is relatively small compared to the written premium - this is consistent with the fact that Aviva is a matured player and new business is only a fraction compared to the existing portfolio. This would look very different for an insurance start-up.
 
 • Very high investment income - again connected to the fact that the portfolio is mainly composed of traditional life&pension products with strong investment components and exists for a long time. The reservers are very high and the incomes from the assets covering these reserves are the main potential source of profit for Aviva (they need to earn more on investments than the return which they guarantee to the policyholders).
 
