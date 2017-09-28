@@ -1,8 +1,8 @@
 """
-This script connects to `data.sfgov` server and downloads the data (in chunks - chunks are then put together to form the complete table).
-To avoid repetitive downloading of already downloaded chunks, only the newly updated data are downloaded from the `data.sfgov` server. 
-This is achieved through `last_updated_time_df.csv`, which stores the most recent update the dataset had. This way, we can get (almost)
-arbitrarily close to real-time data processing. 
+Following script connects to `data.sfgov` server and downloads the data (data is donwloaded in chunks, which are then put together t
+o form the complete table). To avoid repetitive downloading of already downloaded chunks, only newly updated data are downloaded from 
+the `data.sfgov` server. The most recent update timestamp is stored in last_updated_time_df.csv, which gets refreshed via 
+`daily_trend_and_category_evaluation.sql` script. This way, we can get (almost arbitrarily) close to a real-time data processing.  
 """
 
 from sodapy import Socrata
