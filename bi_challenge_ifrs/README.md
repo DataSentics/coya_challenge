@@ -10,7 +10,7 @@ https://www.aviva.com/media/upload/ifrs.xlsx
 Let's take a motor insurance policy (one year coverage) which starts on 1.11.2017 and has a total premium of 480 EUR. There are different options on how to pay premium in terms of frequency = one payment at the start for the whole policy or for example quarterly or monthly but typically many clients go with one annual payment at the start of the policy. Let's assume we have a annual premium paid at the start. Also let's assume that the insurance company has a financial reporting year equivalent to the calendar year (i.e. the 2017 financial year means 1.1.2017-31.12.2017 for them).
 
 ## Earned premium concept
-(see accompanying picture - earned_premium.jpg, https://github.com/DataSentics/coya_challenge/blob/master/bi_challenge_ifrs/earned_premium.jpg) 
+![alt text](earned_premium.jpg) 
 
 We are now in 31.12.2017, the insurer is closing his financial year and he needs to decide what profit&loss he should report for 2017. On our policy the client already paid (or at least the premium has been written / i.e. invoiced - late payments, etc. are another issue) the whole amount of 480 EUR and let's assume that during the first 2 months of the policy there were 0 EUR claims. 480 EUR is the written premium in 2017.
 
