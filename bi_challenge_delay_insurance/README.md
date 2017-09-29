@@ -82,4 +82,7 @@ To be efficient and come to a reasonable result in short time (one day) we used 
 2) Calculate key metrics (whether a flight is delayed, delay rate, main reason for delay, number of reasons, etc.)
 3) Perform visualisations
 4) Save as twbx file for Tableau reader
+https://datasentics.slack.com/files/U23ABQCN7/F7AUNDKNX/coya.twbx
+https://www.tableau.com/products/reader/download
+
 
