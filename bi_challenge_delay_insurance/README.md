@@ -19,7 +19,7 @@ Generally after seeing that the average flight delay rate is very high (more tha
 ## Flight delay threshold
 The first important parameter is the threshold (minimum number of minutes of delay) from which the coverage would start. We analyzed the ratio of delayed flights as a % of all flights depending on the threshold in minutes. 
 
-![alt text](Rlot.png "Average delay rate vs. threshold in minutes")
+![alt text](Rplot.png "Average delay rate vs. threshold in minutes")
 
 It can be seen from this (see XXX) that more than 40% of flights have some delay and it wouldn't make sense to cover this (too frequent). From the graph we consider 45 minutes a optimum threshold ("knee" of the graph) - such delays are not that frequent (it is a rare random event) but still frequent enough that the coverage brings value to the customer. Also this is a threshold which makes business sense as well - when you need to catch a connecting flight or be somewhere on time for a meeting you typically have 30 minutes slack but 45 minutes is typically already a problem.
 
