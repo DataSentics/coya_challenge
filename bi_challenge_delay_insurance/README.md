@@ -40,7 +40,11 @@ The main conclusions are that the delay rates (>45 minutes) highly depend on sev
 • airports - very strong dependency on airports, not only related to amount of traffic (e.g. East cost US much worse than West coast even though the traffic is similar)
 
 ## Pricing
-We would propose a risk based pricing model based on the observed dependencies (similar to for example motor insurance where the premium depends on several risk factors such as age, region, car, etc.). We have created a simple pilot pricing model in R (GLM), which is described in more detail in it's own section.
+We would propose a risk based pricing model based on the observed dependencies (similar to for example motor insurance where the premium depends on several risk factors such as age, region, car, etc.). We have created a simple pilot pricing model in R (GLM).
+[Pricing model detailed description and results](model)
+[Pricing model R script](model/model.R)
+![alt text](model/lift.png)
+
 
 ## Question to reasons
 The reasons for delay are analyzed in the dashboard "Reasons". The key conlusions are:
@@ -61,8 +65,6 @@ Based on the above we would propose to consider some of the following exceptions
 • it might make sense to limit the product only to connecting flights (i.e. the claim is valid only if a connecting flight was missed), otherwise again it could be more prone to speculation/anti-selection
 
 • it might make sense to exclude some of the most risky flights in terms of time of day/week/year, carrier, origin/destination
-
-# Pricing model
 
 # Our approach - technical
 To be efficient and come to a reasonable result in short time (one day) we used the tools where we are the most comfortable: 1) Python + SQL for downloading data and data preparation - running and orchestrated inside Keboola cloud ETL platform
