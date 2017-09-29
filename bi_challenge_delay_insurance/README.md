@@ -32,8 +32,11 @@ https://www.tableau.com/products/reader/download
 The main conclusions are that the delay rates (>45 minutes) highly depend on several key factors:
 
 • seasonality - very stronly seasonality on the level of months in a year, also strong seasonality within a week
+
 • time of day - very strong dependency, low in the morning and gradually growing the whole day - this is probably due to delay cummulation - in the morning the plane starts flying back and forth, the later it is in the day the more flights it has done and the greater the chance that there was some problem somewhere -> lesson learned: fly in the morning
+
 • carrier - big differences between carriers
+
 • airports - very strong dependency on airports, not only related to amount of traffic (e.g. East cost US much worse than West coast even though the traffic is similar)
 
 ## Pricing
@@ -70,7 +73,7 @@ To be efficient and come to a reasonable result in short time (one day) we used 
 ## Data preparation - Python + SQL scripts managed/orchestrated in Keboola
 1) Download, unzip and parse flight delay data - [flight_delay_extractor.py](src/flight_delay_extractor.py)
 2) Download and parse airline names codebook - [airlines_codes_extractor.py](src/airlines_codes_extractor.py)
-3) Download and parse (incl. parsing geo information) airport codebook  - [airport_codes_extractor.py](scr/airport_codes_extractor.py)
+3) Download and parse (incl. parsing geo information) airport codebook  - [airport_codes_extractor.py](src/airport_codes_extractor.py)
 4) Join all data and prepare for analysis - [extracts_join.sql](src/extracts_join.sql)
 5) Write into Snowflake database
 
