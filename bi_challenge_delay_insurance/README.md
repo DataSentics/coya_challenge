@@ -29,15 +29,19 @@ https://datasentics.slack.com/files/U23ABQCN7/F7AUNDKNX/coya.twbx
 To open the file download Tableau reader:
 https://www.tableau.com/products/reader/download
 
-The main conclusions are that the delay rates (>45 minutes) highly depend on several key factors:
+The main conclusions are that the delay rates (>45 minutes) highly depend on several key factors (showing only a few sample visualisations, more details in Tableau workbook):
 
 • seasonality - very stronly seasonality on the level of months in a year, also strong seasonality within a week
 
 • time of day - very strong dependency, low in the morning and gradually growing the whole day - this is probably due to delay cummulation - in the morning the plane starts flying back and forth, the later it is in the day the more flights it has done and the greater the chance that there was some problem somewhere -> lesson learned: fly in the morning
 
+![alt text](pics/arrivaltime.png)
+
 • carrier - big differences between carriers
 
 • airports - very strong dependency on airports, not only related to amount of traffic (e.g. East cost US much worse than West coast even though the traffic is similar)
+
+![alt text](pics/map.png)
 
 ## Pricing
 We would propose a risk based pricing model based on the observed dependencies (similar to for example motor insurance where the premium depends on several risk factors such as age, region, car, etc.). We have created a simple pilot pricing model in R (GLM).
@@ -47,7 +51,7 @@ We would propose a risk based pricing model based on the observed dependencies (
 [Pricing model R script](model/model.R)
 
 Importance of predictors for delay (left means decreased probability of delay and right means increased probability of delay):
-![alt text](model/varimp.png)
+![alt text](model/varimplot.png)
 
 
 ## Question to reasons
@@ -60,6 +64,8 @@ The reasons for delay are analyzed in the dashboard "Reasons". The key conlusion
 • NAS (due to air traffic control - e.g. too big traffic and planes has to circle) is also similarly import
 
 • weather and security are less imporant, however weather delays are typically more severe
+
+![alt text](pics/reasons.png)
 
 ## Question to exceptions
 Based on the above we would propose to consider some of the following exceptions and conditions:
