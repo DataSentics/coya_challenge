@@ -19,6 +19,7 @@ Generally after seeing that the average flight delay rate is very high (more tha
 ## Flight delay threshold
 The first important parameter is the threshold (minimum number of minutes of delay) from which the coverage would start. We analyzed the ratio of delayed flights as a % of all flights depending on the threshold in minutes. 
 ![alt text](src/minutesToDelayPlot.png "Average delay rate vs. threshold in minutes")
+
 It can be seen from this that more than 40% of flights have some delay and it wouldn't make sense to cover this (too frequent). From the graph we consider 45 minutes a optimum threshold ("knee" of the graph) - such delays are not that frequent (it is a rare random event) but still frequent enough that the coverage brings value to the customer. Also this is a threshold which makes business sense as well - when you need to catch a connecting flight or be somewhere on time for a meeting you typically have 30 minutes slack but 45 minutes is typically already a problem.
 
 ## What does delay depend on
@@ -29,8 +30,11 @@ https://www.tableau.com/products/reader/download
 
 The main conclusions are that the delay rates (>45 minutes) highly depend on several key factors:
 • seasonality - very stronly seasonality on the level of months in a year, also strong seasonality within a week
+
 • time of day - very strong dependency, low in the morning and gradually growing the whole day - this is probably due to delay cummulation - in the morning the plane starts flying back and forth, the later it is in the day the more flights it has done and the greater the chance that there was some problem somewhere -> lesson learned: fly in the morning
+
 • carrier - big differences between carriers
+
 • airports - very strong dependency on airports, not only related to amount of traffic (e.g. East cost US much worse than West coast even though the traffic is similar)
 
 ## Pricing
@@ -39,14 +43,19 @@ We would propose a risk based pricing model based on the observed dependencies (
 ## Question to reasons
 The reasons for delay are analyzed in the dashboard "Reasons". The key conlusions are:
 • late aircraft arrival is the main reason - it would be very interesting to analyze also the original reason (what delayed the aircraft on the last flight) - in our backlog of things to look at before our call next week
+
 • carrier reasons (e.g. technical problems of plane, boarding complications, etc.) are the next most important reason not suprisingly
+
 • NAS (due to air traffic control - e.g. too big traffic and planes has to circle) is also similarly import
+
 • weather and security are less imporant, however weather delays are typically more severe
 
 ## Question to exceptions
 Based on the above we would propose to consider some of the following exceptions and conditions:
 • the insurance should not be concluded the same day due to arbitrage/speculation/anti-selection/fraud - a person could see that a previous flight of the same plane was delayed and that it will most likely lead to a delay of his own flight
+
 • it might make sense to limit the product only to connecting flights (i.e. the claim is valid only if a connecting flight was missed), otherwise again it could be more prone to speculation/anti-selection
+
 • it might make sense to exclude some of the most risky flights in terms of time of day/week/year, carrier, origin/destination
 
 # Pricing model
@@ -58,7 +67,7 @@ To be efficient and come to a reasonable result in short time (one day) we used 
 4) R for pilot pricing predictive model
 
 ## Data preparation - Python + SQL scripts managed/orchestrated in Keboola
-1) Download, unzip and parse flight delay data - src/flight_delay_extractor.py
+1) Download, unzip and parse flight delay data - ![alt text](src/flight_delay_extractor.py)
 2) Download and parse airline names codebook - src/airlines_codes_extractor.py
 3) Download and parse (incl. parsing geo information) airport codebook - scr/airport_codes_extractor.py
 4) Join all data and prepare for analysis - extracts_join.sql
