@@ -23,15 +23,17 @@ The first important parameter is the threshold (minimum number of minutes of del
 It can be seen from this that more than 40% of flights have some delay and it wouldn't make sense to cover this (too frequent). From the graph we consider 45 minutes a optimum threshold ("knee" of the graph) - such delays are not that frequent (it is a rare random event) but still frequent enough that the coverage brings value to the customer. Also this is a threshold which makes business sense as well - when you need to catch a connecting flight or be somewhere on time for a meeting you typically have 30 minutes slack but 45 minutes is typically already a problem.
 
 ## What does delay depend on
-We studied the delay data in more detail to get an understanding of the underlying risk, get an idea how to price the product and what kind of exclusions to potentially introduce into the product. The underlying visual analyses in Tableau can be found in here (unfortunately the data and analysis were too complex to upload to Tableau Public):
+We studied the delay data in more detail to get an understanding of the underlying risk, get an idea how to price the product and what kind of exclusions to potentially introduce into the product. The underlying visual analyses and commentary of results in Tableau can be found here (unfortunately the data and analysis were too complex to upload to Tableau Public):
 https://datasentics.slack.com/files/U23ABQCN7/F7AUNDKNX/coya.twbx
 
 To open the file download Tableau reader:
 https://www.tableau.com/products/reader/download
 
-The main conclusions are that the delay rates (>45 minutes) highly depend on several key factors (showing only a few sample visualisations, more details in Tableau workbook):
+The main conclusions are that the delay rates (>45 minutes) highly depend on several key factors (showing only a few sample visualisations, more details in Tableau workbook including detailed commentary to results):
 
 • seasonality - very stronly seasonality on the level of months in a year, also strong seasonality within a week
+
+![alt text](pics/months.png)
 
 • time of day - very strong dependency, low in the morning and gradually growing the whole day - this is probably due to delay cummulation - in the morning the plane starts flying back and forth, the later it is in the day the more flights it has done and the greater the chance that there was some problem somewhere -> lesson learned: fly in the morning
 
@@ -51,7 +53,7 @@ We would propose a risk based pricing model based on the observed dependencies (
 [Pricing model R script](model/model.R)
 
 Importance of predictors for delay (left means decreased probability of delay and right means increased probability of delay):
-![alt text](model/varimplot.png)
+![alt text](model/varimpplot.png)
 
 
 ## Question to reasons
