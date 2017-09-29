@@ -27,7 +27,7 @@ Looking at the data source (sfgov) we found the following key information:
 
 Because we want to setup a regular pipeline to download and process data via an API and we also want to extend this pipeline by other data sources in the future we opted to use an ETL tool, which will allow us to manage and orchestrate the invidiual sub-pipelines/scripts. Because we want to use the data further for analytics we opted to store the data (historized) in a analytical DWH (columnar-based).
 
-For reasons of efficiency and costs we choose to use the Keboola platform (cloud ETL tool on AWS where we have a free development/PoC environment including a Snowflake analytical cloud DWH also based on AWS). Alternatively something similar could be achieved in similar platforms (AWS + Databricks+Python/Scala+Spark+Redshift, GCP+Dataflow+Python/Java+BiqQuery+CRON, Azure+Data Factory+SQL, MS SQL + SSIS + SQL, etc.). We have in our backlog for next week that we also want to try out the Databricks variant and simulate real-time streaming of the dataset + connect a live dashboard to it.
+For reasons of efficiency and costs we choose to use the Keboola platform (cloud ETL tool on AWS where we have a free development/PoC environment including a Snowflake analytical cloud DWH also based on AWS). Alternatively something similar could be achieved in similar platforms (AWS + Databricks+Python/Scala+Spark+Redshift, GCP+Dataflow+Python/Java+BiqQuery+CRON, Azure+Data Factory+SQL, MS SQL + SSIS + SQL, Airflow, etc.). We have in our backlog for next week that we also want to try out the Databricks variant and simulate real-time streaming of the dataset + connect a live dashboard to it.
 
 The following picture illustrates how it currently works:
 
@@ -41,10 +41,15 @@ https://public.tableau.com/profile/petr.bednarik6429#!/
 Regarding data quality we did not have time to go into any depth so at the moment we are basically relying on the fact that the data are decent. Generally these are the types of data quality checks we would typically go through:
 
 • perform data profiling of indiviudal attributes, get a feel for what are normal/valid values and what are errors/outliers, understand if missing values are okay or not
+
 • validate against codebooks if there are any (address codebooks, ZIP code codebooks, etc.)
+
 • if there were more tables with relations then validate the relations
+
 • look for probable duplicates (more or less identical rows)
+
 • internal consistency checks (that the date closed is after the date opened, for example in flight delay challenge that sum of minutes split by individual delay sums up to the total delay)
+
 • more global checks such as whether there is some unexpected big change in average new values compared to what was in the past
 
 We would implement these checks as part of the loading ETLs (ideally in a parametrized way reusing some cross-project data quality code) and store the identified errors into a data quality issue datamart for further analysis and resolution (ideally have DQ dashboards on top of these on which somebody is looking and acting on them).
