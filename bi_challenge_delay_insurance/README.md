@@ -41,9 +41,13 @@ The main conclusions are that the delay rates (>45 minutes) highly depend on sev
 
 ## Pricing
 We would propose a risk based pricing model based on the observed dependencies (similar to for example motor insurance where the premium depends on several risk factors such as age, region, car, etc.). We have created a simple pilot pricing model in R (GLM).
+
 [Pricing model detailed description and results](model)
+
 [Pricing model R script](model/model.R)
-![alt text](model/lift.png)
+
+Importance of predictors for delay (left means decreased probability of delay and right means increased probability of delay):
+![alt text](model/varimp.png)
 
 
 ## Question to reasons
