@@ -53,7 +53,8 @@ We would propose a risk based pricing model based on the observed dependencies (
 [Pricing model R script](model/model.R)
 
 Importance of predictors for delay (left means decreased probability of delay and right means increased probability of delay):
-![alt text](model/varimpplot.png)
+
+![alt text](model/varImpPlot.png)
 
 
 ## Question to reasons
